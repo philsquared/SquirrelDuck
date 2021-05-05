@@ -7,12 +7,12 @@
 }
 
 +(Nuttery*) sharedInstance {
-    static Nuttery *sharedInstance = nil;
+    static Nuttery *instance = nil;
 
-    if (sharedInstance == nil) {
-        sharedInstance = [[Nuttery alloc] init];
+    if (instance == nil) {
+        instance = [[Nuttery alloc] init];
     }
-    return sharedInstance;
+    return instance;
 }
 
 -(int) nutsPerMouthful {
